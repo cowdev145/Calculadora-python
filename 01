@@ -4,11 +4,14 @@ resultado = 0
 op = ''
 continuar = ''
 while True:
+    print('Opções da Calculadora')
+    print(20*'-=')
     print('''
     [ + ] Soma
     [ - ] Subtração
     [ * ] Multiplicação
-    [ / ] Divisão''')
+    [ / ] Divisão\n''')
+    print(20*'-=')
     num1 = float(input('Digite o primeiro número:'))
     op = str(input('Escolhe sua opção:'))
     num2 = float(input('Digite o segundo número:'))
