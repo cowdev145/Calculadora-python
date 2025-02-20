@@ -1,0 +1,29 @@
+num1 = 0
+num2 = 0
+resultado = 0
+op = ''
+continuar = ''
+while True:
+    print('''
+    [ + ] Soma
+    [ - ] Subtração
+    [ * ] Multiplicação
+    [ / ] Divisão''')
+    num1 = float(input('Digite o primeiro número:'))
+    op = str(input('Escolhe sua opção:'))
+    num2 = float(input('Digite o segundo número:'))
+    if op == '+':
+        resultado = num1 + num2
+    elif op == '-':
+        resultado = num1 - num2
+    elif op == '*':
+        resultado = num1 * num2
+    elif op == '/':
+        resultado = num1 / num2
+    else:
+        print('Opção invalida.')
+    print(f'{num1} {op} {num2} = {resultado}')
+    continuar = str(input('Quer continuar? [S/N]: ')).upper().strip()[0]
+    if continuar == 'N':
+        break
+print('Acabou...')
